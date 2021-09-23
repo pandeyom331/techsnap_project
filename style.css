@@ -1,0 +1,196 @@
+.task1 {
+    overflow: hidden;
+    background-color: #FFD500;
+    height: 100vh;
+}
+.container h1 {
+    font-size: 68px;
+    font-weight: 900;
+}
+.container h4 {
+    font-size: 30px;
+}
+.container h6 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.button button {
+    background-color: rgb(89, 0, 255);
+    color: aliceblue;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-left: -100px;
+}
+.grp32 {
+    width: 650px;
+    margin-left: -100px;
+    margin-top: -60px;
+}
+.ssqr {
+    margin-top: -318px;
+    margin-left: 200px;
+}
+.rightsqr{
+    padding-top: 60px;
+    padding-left: 465px;
+}
+.leftsqr {
+    margin-top: -80px;
+}
+
+
+.task2 {
+    background-color: #101630;
+    height: 100vh;
+}
+
+.circle .title {
+    font-size: 58px;
+    color: white;
+    background: linear-gradient(to top right, #101630, #1b1f33, #424653);
+    font-weight: bold;
+    height: 480px;
+    width: 432px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+ul {
+    list-style-type: none;
+}
+.icon1, .icon2, .icon3, .icon4 {
+    /* background-color: palevioletred; */
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icon1 {
+    background-color: rgb(145, 57, 108);
+}
+.icon2 {
+    background-color: rgb(70, 123, 158);
+}
+.icon3 {
+    background-color: #FFD500;
+}
+.icon4 {
+    background-color: rgb(15, 224, 127);
+}
+.text1 {
+    color: rgb(145, 57, 108);
+}
+.text2 {
+    color: rgb(70, 123, 158);
+}
+.text3 {
+    color: #FFD500;
+}
+.text4 {
+    color: rgb(15, 224, 127);
+}
+.fas {
+    color: white;
+    font-size: 62px;
+    margin-left: 20px;
+    padding: 5px;
+}
+p {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+.text {
+    padding-left: 110px;
+    margin-top: -160px;
+}
+li {
+    margin: 60px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .container h1 {
+        font-size: 36px;
+        font-weight: 900;
+        margin-top: -40px;
+    }
+    .container h4 {
+        font-size: 14px;
+        margin-top: -40px;
+    }
+    .container h6 {
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: -120px;
+    }
+    .button button {
+        background-color: rgb(89, 0, 255);
+        color: aliceblue;
+        width: 130px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bolder;
+        border-radius: 10px;
+        margin-left: 0px;
+        margin-top: -60px;
+    }
+    .svg {
+        margin-top: 80px;
+        margin-left: 100px;
+    }
+    .grp32 {
+        width: 360px;
+    }
+    .ssqr {
+        width: 50px;
+        margin-bottom: -150px;
+    }
+    .rightsqr {
+        width: 80px;
+        margin-right: 80px;        
+    }
+    .leftsqr {
+        height: 60px;
+        margin-left: 210px;
+    }
+    .task2 {
+        height: 166vh;
+    }
+    .circle .title {
+        font-size: 32px;
+        height: 300px;
+        width: 270px;
+        margin-top: 40px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .text h4 {
+        font-size: 26px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .list2 {
+        margin-top: -15px;
+    }
+    .list3 {
+        margin-top: 75px;
+    }
+    .list4 {
+        margin-top: -15px;
+    }
+  }
+  
