@@ -2,91 +2,189 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link href="headfoot.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <section class="task1 pt-5">
-        <div class="container pt-4">
-            <div class="row pt-5">
-                <div class="col-12 col-md-8">
-                    <h6 class="py-5">Want to choose ur job description ? Confused what to choose ? <br>Donno whom to ask ? Donno where to start ? Donno what to do ???? </h6>
-                    <h1>Wait !</h1>
-                    <h4 class="pt-5">No need to worry <br>We help you to get through all these things !</h4>
-                    <div class="button text-center mt-5 pt-3">
-                        <button class="btn">EXPLORE ALL</button>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="svg">
-                        <img class="ssqr" src="single restangle.svg" alt="single-square">
-                        <img class="grp32" src="Group 32.svg" alt="group-32">
-                        <img class="rightsqr" src="right square.svg" alt="left-square">
-                        <img class="leftsqr" src="left square.svg" alt="right-square">
-                    </div>
-                </div>
-            </div>
+  <section class="header">
+    <img id='logo' src="images/logo.jpg" alt="logo">
+        <div class="navItems">
+          <a href="##">About Us</a>
+          <a href="##">Our People</a>
+          <a href="##">Learn</a>
+          <button class="btn">Get Started</button>
         </div>
-    </section>
-    <section class="task2">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-12 circle text-center">
-                <h1 class="title">How TechSnap <br> Works!</h1>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 sec-2">
-              <ul class="list">
-                  <li class="list1">
-                      <div class="icon1">
-                        <img src="carrer.svg" alt="carrer">
-                      </div>
-                      <!-- <i class="fas fa-arrow-down"></i> -->
-                      <i class="fas fa-long-arrow-down"></i>
-                      <div class="text">
-                        <h4 class="text1">Choose Career Path ></h4>
-                        <p>Choose your career based on <br>your skills and interests in field</p>
-                      </div>
-                  </li>
-                  <li class="list2">                    
-                      <div class="icon2">
-                        <img src="courses.svg" alt="courses">
-                      </div>
-                      <i class="fas fa-long-arrow-down"></i>
-                      <div class="text">
-                        <h4 class="text2">Take Courses ></h4>
-                        <p>Choose your career based on <br>your skills and interests in field</p>
-                      </div>
-                  </li>
-                  <li class="list3">                    
-                       <div class="icon3">
-                         <img src="projects.svg" alt="projects">
-                      </div>
-                      <i class="fas fa-long-arrow-down"></i>
-                      <div class="text">
-                        <h4 class="text3">Apply & Do Projects ></h4>
-                        <p>Choose your career based on <br>your skills and interests in field</p>
-                      </div>
-                  </li>
-                  <li class="list4">                    
-                       <div class="icon4">
-                          <img src="achieve.svg" alt="achieve">
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="text">
-                           <h4 class="text4">Achieve Your Designation ></h4>
-                           <p>Choose your career based on <br>your skills and interests in field</p>
-                        </div>                      
-                  </li>
-              </ul>
-            </div>
+        <div class="Ham">
+          <img src="images/menu.png" alt="Ham" >
+        </div>
+      </section>
+      <!-- mobile menu --------------------------------------------- -->
+      <div class="dropMenu">
+        <ul>
+          <li><a href="##">About Us</a></li>
+          <li><a href="##">Our People</a></li>
+          <li><a href="##">Learn</a></li>
+          <button class="btn">Get Started</button>
           
+        </ul>
+        <div class="Close">X</div>
+      </div>
+  </section>
+<section id="page1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-6 txtgrp my-5 p-5">
+        <div class="txt1 px-4 py-3">
+          <p>Want to choose ur job description ? Confused what to choose ?</p>
+          <p id="pad-10">Donno whom to ask ? Donno where to start ? Donno what to do ????</p>
+        </div>
+        <h1 class="px-4">WAIT !</h1>
+        <div class="txt2 px-4 py-3">
+          <p>No need to worry</p>
+          <p id="pad-10">We help you to get through all these things !</p>
+        </div>
+        <div class="button px-4 py-2">
+          <button class="btn btn-primary">EXPLORE ALL</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 svg">
+        <img class="img-fluid" src="assets/Group 35.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="page2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 circle text-center">
+        <h1 class="title">How TechSnap <br> Works!</h1>
+      </div>
+      <div class="col-12 col-md-6 lists">
+        <div class="row list1">
+          <div class="col-6">
+            <div class="icon1">
+              <img src="assets/carrer.svg" alt="">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="text">
+              <h4 class="text1">Choose Career Path ></h4>
+              <p>Choose your career based on your skills and interests in field</p>
+            </div>
           </div>
         </div>
-    
-      </section>  
+        <img src="assets/Group 7.svg" alt="" class="arrow">
+        <div class="row list2">
+          <div class="col-6">
+            <div class="icon2">
+              <img src="assets/courses.svg" alt="">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="text">
+              <h4 class="text2">Take Courses ></h4>
+              <p>We provide courses in three different formats like blogs, video and live</p>
+            </div>
+          </div>
+        </div>
+        <img src="assets/Group 7.svg" alt="" class="arrow">
+        <div class="row list3">
+          <div class="col-6">
+            <div class="icon3">
+              <img src="assets/projects.svg" alt="">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="text">
+              <h4 class="text3">Apply & Do Projects ></h4>
+              <p>Apply your learned skills and build some real world applications</p>
+            </div>
+          </div>
+        </div>
+        <img src="assets/Group 7.svg" alt="" class="arrow">
+        <div class="row list4">
+          <div class="col-6">
+            <div class="icon4">
+              <img src="assets/achieve.svg" alt="">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="text">
+              <h4 class="text4">Achieve Your Designation ></h4>
+              <p>Land on your dream career with experiance and projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="Footer_conatiner">
+  <div class="Footer_header">
+  <img src="images/logo.jpg" alt="Logo" >
+  <br><br>
+  <p>We are here to endure your muddled stages of knowing the trends while pursuing UG-CSE.</br>we help you to know about trending jobs and required skills</p>
+  <br>
+  <p>We will succour you in submitting your university projects as well as steer you with free tutorials</p>
+  </div>
+  <div class="Footer_columns_holder">
+    <div class="Footer_columns">
+      <h1>Company</h1>
+      <a href="##">About us</a>
+      <a href="##">Learner stories</a>
+      <a href="##">our people</a>
+      <a href="##">jobs</a>
+    </div>
+    <div class="Footer_columns">
+      <h1>Resources</h1>
+      <a href="##">Learn</a>
+      <a href="##">Carrer path</a>
+      <a href="##">Internship</a>
+      <a href="##">Blogs</a>
+    </div>
+    <div class="Footer_columns">
+      <h1>Support</h1>
+      <a href="##">Contact us</a>
+      <a href="##">FAQ</a>
+      <a href="##">Any ideas DM us</a>
+      <a href="##">Doc</a>
+    </div>
+    <div class="Footer_columns">
+      <h1>Services</h1>
+      <a href="##">Startup services</a>
+      <a href="##">Design services</a>
+      <a href="##">Projects</a>
+      <a href="##">Courses</a>
+    </div>
+  </div>
+</footer>
+<div class="Privacy_holder">
+<div class="Privacy_links">
+  <a href="##">Privacy policy</a>
+  <a href="##">Cookies Notice</a>
+  <a href="##">Security</a>
+  <a href="##">Terms of use</a>
+</div>
+<div class="Social-media">
+  <img src="images/linkedin.svg"/>
+  <img src="images/twitter.svg"/>
+  <img src="images/instagram.svg"/>
+</div>
+</div>
 </body>
 </html>
