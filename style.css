@@ -8,7 +8,7 @@
     background: #FFD500;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 #page1 h1 {
@@ -85,7 +85,7 @@
     background: #101630;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 .circle h1 {
