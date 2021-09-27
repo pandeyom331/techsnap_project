@@ -19,6 +19,261 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main {
+        background-color: rgb(80, 80, 218);
+    }
+
+    body
+    {
+        background-color: black;
+    }
+
+    .main i {
+        margin: 10px 10px;
+        font-size: xx-large;
+        color: #fff;
+    }
+
+    .main .center {
+        text-align: center;
+    }
+
+    .main .top {
+            padding: 10px 5px;
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 70px;
+    }
+
+    .main .card {
+        border-radius: 20px;
+    }
+
+    .main .mid {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .main .card-img-top {
+        display: flex;
+        color: azure;
+    }
+
+    .main .card{
+            height: 167px;
+            width: 286px;
+        }
+
+    .main .container {
+        width: auto;
+    }
+
+    .main h3{
+        margin:0;
+    }
+
+    .main h2{
+       margin-top: 0 !important;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+        .main h2 {
+            font-size: x-large;
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .main h2 {
+            font-size: xx-large;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .main .col-md-4 {
+            padding: 20px !important;
+        }
+
+    }
+
+    @media only screen and (max-width:1100px) and (min-width: 850px) {
+        .main .row {
+
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+        }
+
+        .main h2 {
+            text-align: center;
+        }
+
+        .main .col-md-4 {
+            padding: 20px !important;
+        }
+
+        .main .card{
+            width: 20rem !important;
+        }
+
+        .main .card-body{
+            width: 10rem !important;
+        }
+
+        .main .mid{
+            font-size: 15px;
+        }
+        
+    }
+
+
+    @media only screen and (min-width: 300px) and (max-width:900px) {
+        .main .row {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+        }
+
+        .main h2 {
+            margin-left: 200px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .main .card{
+            width: 20rem !important;
+        }
+
+        .main .card-body{
+            width: 10rem !important;
+        }
+
+        .main .mid{
+            font-size: 15px;
+        }
+    }
+    @media only screen and (min-width: 300px) and (max-width:760px) {
+
+        .main .card{
+            width: 15rem !important;
+        }
+
+        .main .card-body{
+            width: 10rem !important;
+        }
+
+        .main .mid{
+            font-size: 12px;
+        }
+
+        .main .top h5{
+            font-size: 20px;
+        }
+
+        .main h2{
+            margin-left: 150px;
+            text-align: center;
+            width: 200px;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width:570px) {
+
+        .main .card{
+            width: 12rem !important;
+        }
+
+        .main .card-body{
+            width: 8rem !important;
+        }
+
+        .main .mid{
+            font-size: 10px;
+        }
+
+        .main .top h5{
+            font-size: 15px;
+        }
+        .main .top {
+            height: 80px;
+        }
+
+        .main h2 {
+            margin-left: 150px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .main i {
+            font-size: x-large;
+        }
+    }
+    @media only screen and (min-width: 300px) and (max-width:460px) {
+
+        .main .card{
+            width: 8rem !important;
+        }
+
+        .main .card-body{
+            width: 8rem !important;
+            height: 8rem;
+        }
+
+        .main .mid{
+            font-size: 7px;
+            width: 8rem !important;
+
+        }
+
+        .main .top h5{
+            font-size: 12px;
+        }
+        .main .top {
+            height: 60px;
+            padding: 15px 8px;
+        }
+
+        .main h2 {
+            margin-left: 70px;
+            text-align: center;
+            font-size: x-large;
+            width: 150px;
+        }
+
+        .main h3{
+            font-size: x-large;
+        }
+
+        .main i {
+            font-size: large;
+            margin: 8px 8px;
+        }
+
+        .main .card .btn{
+            font-weight:normal !important;
+            font-size: xx-small;
+            text-align: center !important;
+            width: 1.5rem;
+            height: 1.6rem;
+        }
+    }
+
+    @media only screen and (min-width: 1100px) and (max-width:1200px) {
+            .main .mid{
+                font-size: 14px;
+            }
+        }
+</style>
+
 </head>
 <body>
   <section class="header">
@@ -27,7 +282,7 @@
           <a href="##">About Us</a>
           <a href="##">Our People</a>
           <a href="##">Learn</a>
-          <button class="btn">Get Started</button>
+          <button class="bton">Get Started</button>
         </div>
         <div class="Ham">
           <img src="images/menu.png" alt="Ham" >
@@ -39,7 +294,7 @@
           <li><a href="##">About Us</a></li>
           <li><a href="##">Our People</a></li>
           <li><a href="##">Learn</a></li>
-          <button class="btn">Get Started</button>
+          <button class="bton">Get Started</button>
           
         </ul>
         <div class="Close">X</div>
@@ -134,6 +389,165 @@
     </div>
   </div>
 </section>
+
+<section class="main">
+
+  <div class="container">
+      <div class="col-12 text-lg-center" style="color: azure; font-size: 3rem">
+          <h2 class="mt-4" style="font-weight: 700;">Techsnap's Carrer Paths</h2>
+      </div>
+
+      <div class="row">
+          <div class="col-12 col-md-4  p-3">
+              <div class="card" >
+                  <div class="top" style="background-color: rgb(0, 217, 255)">
+                      <div class="card-img-top">
+                          <i class="fas fa-fingerprint"></i>
+                          <h5 class="mt-2 ml-2">Cyber Security</h5>
+                      </div>
+                  </div>
+                  <div class="mid">
+                      <div class="card-body">
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consecr corporis temporibus
+                              suscipit quae aspernatur
+                          </p>
+                      </div>
+                      <div>
+                          <a href="#" style="background-color: rgb(0, 217, 255);  font-weight:bolder;"
+                              class="btn rounded-circle mr-3">></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="col-12 col-md-4  p-3">
+              <div class="card" >
+                  <div class="top" style="background-color: rgb(0, 255, 21)">
+                      <div class="card-img-top">
+                          <i class="fas fa-cubes"></i>
+                          <h5 class="ml-2 mt-2">Data mining & analytics</h5>
+                      </div>
+                  </div>
+
+                  <div class="mid">
+                      <div class="card-body">
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consecr corporis temporibus
+                              suscipit quae aspernatur
+                          </p>
+                      </div>
+                      <div>
+                          <a href="#" style="background-color: rgb(0, 255, 21);  font-weight:bolder;"
+                              class="btn rounded-circle mr-3">></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-4  p-3">
+              <div class="card" >
+                  <div class="top" style="background-color: rgb(51, 49, 175)">
+                      <div class="card-img-top">
+                          <i class="fas fa-cloud"></i>
+                          <h5 class="mt-2 ml-2">Cloud Computing</h5>
+                      </div>
+                  </div>
+
+                  <div class="mid">
+                      <div class="card-body">
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consecr corporis temporibus
+                              suscipit quae aspernatur
+                          </p>
+                      </div>
+                      <div>
+                          <a href="#" style="background-color: rgb(51, 49, 175); font-weight:bolder;"
+                              class="btn rounded-circle mr-3">></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-md-4  p-3">
+              <div class="card" >
+                  <div class="top" style="background-color: rgb(194, 81, 15)">
+                      <div class="card-img-top">
+                          <i class="fas fa-globe"></i>
+                          <h5 class="mt-2 ml-2">Embedded system</h5>
+                      </div>
+                  </div>
+
+                  <div class="mid">
+                      <div class="card-body">
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consecr corporis temporibus
+                              suscipit quae aspernatur
+                          </p>
+                      </div>
+                      <div>
+                          <a href="#" style="background-color: rgb(255, 72, 27);  font-weight:bolder;"
+                              class="btn rounded-circle mr-3">></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-md-4  p-3">
+              <div class="card" >
+                  <div class="top" style="background-color: rgb(194, 15, 134)">
+                      <div class="card-img-top">
+                          <i class="fas fa-database"></i>
+                          <h5 class="mt-2 ml-2">Database Design</h5>
+                      </div>
+                  </div>
+
+                  <div class="mid">
+                      <div class="card-body">
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consecr corporis temporibus
+                              suscipit quae aspernatur
+                          </p>
+                      </div>
+                      <div>
+                          <a href="#" style="background-color: rgb(194, 15, 134); font-weight:bolder;"
+                              class="btn rounded-circle mr-3">></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-md-4  p-3">
+              <div class="card" >
+                  <div class="top" style="background-color: rgb(255, 124, 47)">
+                      <div class="card-img-top">
+                          <i class="fas fa-brain"></i>
+                          <h5 class="mt-2 ml-2">All form of AI</h5>
+                      </div>
+                  </div>
+
+                  <div class="mid">
+                      <div class="card-body">
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consecr corporis temporibus
+                              suscipit quae aspernatur
+                          </p>
+                      </div>
+                      <div>
+                          <a href="#" class="btn rounded-circle mr-3"
+                              style="background-color: rgb(255, 124, 47);  font-weight:bolder;">></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <a href="" class="text-right" style="color: azure;">
+          <h3>Explore All ></h3>
+      </a>
+  </div>
+</section>
+
 <footer class="Footer_conatiner">
   <div class="Footer_header">
   <img src="images/logo.jpg" alt="Logo" >
@@ -187,4 +601,25 @@
 </div>
 </div>
 </body>
+<script>
+  const ham = document.querySelector('.Ham');
+  const Close = document.querySelector(".Close");
+  const DropMenu = document.querySelector('.dropMenu')
+  ham.addEventListener('click', () => {
+      DropMenu.classList.add("MenuAnimation")
+
+  })
+  Close.addEventListener('click', () => {
+      DropMenu.classList.remove('MenuAnimation')
+
+  })
+
+</script>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+crossorigin="anonymous"></script>
 </html>
